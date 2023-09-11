@@ -17,11 +17,11 @@ CREATE TABLE author (
 );
 
 -- Genre: Stores information about the genres of books such as name and description
-CREATE TABLE author (
-  author_id INT NOT NULL AUTO_INCREMENT,
-  author_name VARCHAR(255) NOT NULL,
-  bio TEXT,
-  PRIMARY KEY (author_id)
+CREATE TABLE genre (
+  genre_id INT NOT NULL AUTO_INCREMENT,
+  genre_name VARCHAR(255) NOT NULL,
+  description TEXT,
+  PRIMARY KEY (genre_id)
 );
 
 -- Book Genre: Stores relationship between books and genres, a book can belong to multiple genres
